@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body>
+    <h1>Shoe Price Prediction</h1>
+    <form action="/" method="post">
+
+
+    <h3>Markalar:</h3>
+    <input type="radio" name="marka_Nike" id="marka_Nike" value="Nike">
+    <label for="marka_Nike">Marka Nike</label>
+
+    <input type="radio" name="marka_Puma" id="marka_Puma" value="Nike">
+    <label for="marka_Puma">Puma</label>
+
+    <input type="radio" name="marka_Skechers" id="marka_Skechers" value="Skechers">
+    <label for="marka_Skechers">Marka Skechers</label>
+
+    <input type="radio" name="marka_adidas" id="marka_adidas" value="Adidas">
+    <label for="marka_adidas">Marka Adidas</label>
+
+    <h3>Tabanlar:</h3>
+    <input type="radio" name="taban_EVA" id="taban_EVA" value="EVA">
+    <label for="taban_EVA">Taban Eva</label>
+
+    <input type="radio" name="taban_Kauçuk" id="taban_Kauçuk" value="Kauçuk">
+    <label for="taban_Kauçuk">Taban Kauçuk</label>
+
+    <input type="radio" name="taban_Kuaçuk" id="taban_Kuaçuk" value="Kuaçuk">
+    <label for="taban_Kuaçuk">Taban Kuaçuk</label>
+
+    <input type="radio" name="taban_Köpük" id="taban_Köpük" value="Köpük">
+    <label for="taban_Köpük">Taban Köpük</label>
+
+    <input type="radio" name="taban_Poliüretan" id="taban_Poliüretan" value="Poliüretan">
+    <label for="taban_Poliüretan">Taban Poliüretan</label>
+
+    <input type="radio" name="taban_Termo" id="taban_Termo" value="Termo">
+    <label for="taban_Termo">Taban Termo</label>
+
+    <input type="radio" name="taban_Sentetik" id="taban_Sentetik" value="Sentetik">
+    <label for="taban_Sentetik">Taban Sentetik</label>
+
+    <input type="radio" name="taban_TPU" id="taban_TPU" value="TPU">
+    <label for="taban_TPU">Taban TPU</label>
+
+    <input type="radio" name="taban_Tekstil" id="taban_Tekstil" value="Tekstil">
+    <label for="taban_Tekstil">Taban Tekstil</label>
+
+    <input type="radio" name="taban_Termoplastik" id="taban_Termoplastik" value="Termoplastik">
+    <label for="taban_Termoplastik">Taban Termoplastik</label>
+
+    <h3>Dış Materyal:</h3>
+
+    <input type="radio" name="dış_materyal_Deri" id="dış_materyal_Deri" value="Deri">
+    <label for="dış_materyal_Deri">Dış Materyal Deri</label>
+
+    <input type="radio" name="dış_materyal_File" id="dış_materyal_File" value="File">
+    <label for="dış_materyal_File">Dış Materyal File</label>
+
+    <input type="radio" name="dış_materyal_Microfiber" id="dış_materyal_Microfiber" value="Microfiber">
+    <label for="dış_materyal_Microfiber">Dış Materyal Microfiber</label>
+
+    <input type="radio" name="dış_materyal_PU" id="dış_materyal_PU" value="PU">
+    <label for="dış_materyal_PU">Dış Materyal PU</label>
+
+    <input type="radio" name="dış_materyal_Polyester" id="dış_materyal_Polyester" value="Polyester">
+    <label for="dış_materyal_Polyester">Dış Materyal Polyester</label>
+
+    <input type="radio" name="dış_materyal_Sentetik" id="dış_materyal_Sentetik" value="Sentetik">
+    <label for="dış_materyal_Sentetik">Dış Materyal Sentetik</label>
+
+    <input type="radio" name="dış_materyal_Süet" id="dış_materyal_Süet" value="Süet">
+    <label for="dış_materyal_Süet">Dış Materyal Süet</label>
+
+    <input type="radio" name="dış_materyal_Tekstil" id="dış_materyal_Tekstil" value="Tekstil">
+    <label for="dış_materyal_Tekstil">Dış Materyal Tekstil</label>
+
+
+    <h3>Menşei:</h3>
+
+    <input type="radio" name="menşei" id="menşei_Andorra" value="Andorra">
+    <label for="menşei_Andorra">Menşei Andorra</label>
+
+    <input type="radio" name="menşei" id="menşei_Endonezya" value="Endonezya">
+    <label for="menşei_Endonezya">Menşei Endonezya</label>
+
+    <input type="radio" name="menşei" id="menşei_Hindistan" value="Hindistan">
+    <label for="menşei_Hindistan">Menşei Hindistan</label>
+
+    <input type="radio" name="menşei" id="menşei_Kamboçya" value="Kamboçya">
+    <label for="menşei_Kamboçya">Menşei Kamboçya</label>
+
+    <input type="radio" name="menşei" id="menşei_Myanmar" value="Myanmar">
+    <label for="menşei_Myanmar">Menşei Myanmar</label>
+
+    <input type="radio" name="menşei" id="menşei_Tayvan" value="Tayvan">
+    <label for="menşei_Tayvan">Menşei Tayvan</label>
+
+    <input type="radio" name="menşei" id="menşei_Türkiye" value="Türkiye">
+    <label for="menşei_Türkiye">Menşei Türkiye</label>
+
+    <input type="radio" name="menşei" id="menşei_Vietnam" value="Vietnam">
+    <label for="menşei_Vietnam">Menşei Vietnam</label>
+
+    <input type="radio" name="menşei" id="menşei_Çin" value="Çin">
+    <label for="menşei_Çin">Menşei Çin</label>
+
+    <h3>Cinsiyet:</h3>
+    <input type="radio" name="cinsiyet" id="cinsiyet_erkek" value="Erkek">
+    <label for="cinsiyet_erkek">Cinsiyet Erkek</label>
+
+    <input type="radio" name="cinsiyet" id="cinsiyet_kadın" value="Kadın">
+    <label for="cinsiyet_kadın">Cinsiyet Kadın</label>
+
+    <h3>Tip:</h3>
+    <input type="radio" name="tip" id="tip_ayakkabı" value="Ayakkabı">
+    <label for="tip_ayakkabı">Tip Ayakkabı</label>
+
+    <input type="radio" name="tip" id="tip_bot" value="Bot">
+    <label for="tip_bot">Tip Bot</label>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if tahmin %}
+        <h2>Predicted Price: {{ tahmin }}</h2>
+    {% endif %}
+</body>
+</html>
